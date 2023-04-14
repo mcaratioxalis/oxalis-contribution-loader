@@ -1,5 +1,7 @@
 <html>
     <head>
+        <script src="./src/axios.min.js"></script>
+        <script src="./src/sha256.min.js"></script>
         <script src="./main.js"></script>
         <link rel="stylesheet" href="./main.css">
         <link rel="stylesheet" href="./styles/checkbox.css">
@@ -20,10 +22,10 @@
         <ul class="unstyled centered">
 <br/>
 <br/>
-            <label for="start-time">Start Time</label>
+            <label for="start-time" id="starttimelabel">Start Time</label>
             <input type="datetime-local" id="start-time" name="start-time" style="width:100%"/>
 <br/>
-            <label for="end-time">End Time</label>
+            <label for="end-time" id="endtimelabel">End Time</label>
             <input type="datetime-local" id="end-time" name="end-time" style="width:100%"/>
 <br/>
 <br/>
@@ -50,7 +52,14 @@
             <li>
                 <button id="sendbutton" class="bubbly-button">SEND!</button>            
             </li>
+            <br/>
+
+
         </ul>
+        
+        <div id="responcediv" style="background-color: white; width: 95%; min-height: 100px;overflow-wrap: anywhere;">
+
+        </div>
 
         <script src="./src/button.js"></script>
     </body>
