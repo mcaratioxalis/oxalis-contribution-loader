@@ -17,7 +17,6 @@ let OnSendClick     = async () => {
     if(!data) return;
 
     let url         = data.dev ? devUrl : liveUrl;
-    url             = "http://localhost:4000";
     url             += "/community/all";
     url             += `?start=${data.startTime}&end=${data.endTime}&beautify=${data.beautify}&csv=${data.csv}`;
 
