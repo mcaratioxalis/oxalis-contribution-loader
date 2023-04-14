@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <script src="./main.js"></script>
+        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="./styles/checkbox.css">
+        <link rel="stylesheet" href="./styles/inputfield.css">
+        <link rel="stylesheet" href="./styles/button.css">
+    </head>
+    <body>
+        <h1 class="title">Automated Leaderboard and Data Retreaver [ALDR]</h1>
+
+        <div>
+            <input type="checkbox" />
+            <span></span>
+            <input id="pass-input" type="text" placeholder="Access Key Required! Click on lock to input." />
+        </div>
+
+
+
+        <ul class="unstyled centered">
+<br/>
+<br/>
+            <label for="start-time">Start Time</label>
+            <input type="datetime-local" id="start-time" name="start-time" style="width:100%"/>
+<br/>
+            <label for="end-time">End Time</label>
+            <input type="datetime-local" id="end-time" name="end-time" style="width:100%"/>
+<br/>
+<br/>
+            <li>
+                <input class="styled-checkbox" id="beautify-checkbox" type="checkbox">
+                <label for="beautify-checkbox">Beautify</label>
+            </li>
+
+            <li>
+                <input class="styled-checkbox" id="csv-checkbox" type="checkbox">
+                <label for="csv-checkbox">CSV</label>
+            </li>
+
+            <li>
+                <input class="styled-checkbox" id="dev-checkbox" type="checkbox">
+                <label for="dev-checkbox">DEV</label>
+            </li>
+
+            <li>
+                <label for="sortparam">Sorting Parameter</label>
+                <input id="sortparam" style="width:100%">
+            </li>
+
+            <li>
+                <button id="sendbutton" class="bubbly-button">SEND!</button>            
+            </li>
+        </ul>
+
+        <script src="./src/button.js"></script>
+    </body>
+</html>
