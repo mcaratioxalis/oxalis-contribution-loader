@@ -1,5 +1,5 @@
 let sendBtn         = {};
-const liveUrl       = "https://dev.moonfrost.io";
+const liveUrl       = "https://alpha.moonfrost.io/";//"https://dev.moonfrost.io";
 const devUrl        = "http://35.189.103.235:4002";
 
 let starttimelabel      = {};
