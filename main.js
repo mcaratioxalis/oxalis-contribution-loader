@@ -82,7 +82,7 @@ let GetData         = () => {
     }
 
     params.pass         = document.getElementById("pass-input").value.trim();
-    params.pass         = sha256(params.pass);
+    //params.pass         = sha256(params.pass);
     params.startTime    = document.getElementById("start-time").value;
     params.endTime      = document.getElementById("end-time").value;
     params.beautify     = document.getElementById("beautify-checkbox").checked;
